@@ -265,7 +265,10 @@
   /* Team */
   .team{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
   .member{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 18px}
-  .avatar{width:72px;height:72px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;font:700 1.4rem "Space Grotesk",Inter,system-ui,sans-serif;color:#052019;background:linear-gradient(135deg,var(--lime),var(--teal))}
+  .avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 16px;padding:3px;background:linear-gradient(135deg,var(--lime),var(--teal));box-shadow:0 14px 30px -18px rgba(0,0,0,.9);overflow:hidden}
+  .avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;background:#0a1513;transition:transform .25s ease}
+  .member:hover .avatar img{transform:scale(1.05)}
+  @media (prefers-reduced-motion:reduce){.avatar img{transition:none}}
   .member h3{font-size:1.02rem;margin-bottom:2px}
   .member p{color:var(--muted);font-size:.86rem}
   .supervisor{margin-top:28px;text-align:center;color:var(--muted);font-size:.95rem}
@@ -676,10 +679,10 @@
       <h2 class="section-title">The people behind SkySight</h2>
       <p class="lead">Computer Science &amp; Engineering undergraduates at the University of Moratuwa, Sri Lanka.</p>
       <div class="team">
-        <div class="member"><div class="avatar">VW</div><h3>Vinuka Wijesinghe</h3><p>Team member</p></div>
-        <div class="member"><div class="avatar">PS</div><h3>Prabath Samarasinghe</h3><p>Team member</p></div>
-        <div class="member"><div class="avatar">MG</div><h3>Malaka Gunawardana</h3><p>Team member</p></div>
-        <div class="member"><div class="avatar">PL</div><h3>Pamudu Lokuhewa</h3><p>Team member</p></div>
+        <div class="member"><div class="avatar"><img src="images/team/prabath.jpg" alt="Prabath Samarasinghe" width="320" height="320" loading="lazy" decoding="async"></div><h3>Prabath Samarasinghe</h3><p>Team member</p></div>
+        <div class="member"><div class="avatar"><img src="images/team/malaka.jpg" alt="Malaka Gunawardana" width="320" height="320" loading="lazy" decoding="async"></div><h3>Malaka Gunawardana</h3><p>Team member</p></div>
+        <div class="member"><div class="avatar"><img src="images/team/vinuka.jpg" alt="Vinuka Wijesinghe" width="320" height="320" loading="lazy" decoding="async"></div><h3>Vinuka Wijesinghe</h3><p>Team member</p></div>
+        <div class="member"><div class="avatar"><img src="images/team/pamudu.png" alt="Pamudu Lokuhewa" width="320" height="320" loading="lazy" decoding="async"></div><h3>Pamudu Lokuhewa</h3><p>Team member</p></div>
       </div>
       <p class="supervisor">Supervised by <b>Prof. Dulani Meedeniya</b>, Department of Computer Science &amp; Engineering</p>
     </div>
